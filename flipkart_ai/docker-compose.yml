@@ -1,0 +1,27 @@
+services:
+  mongodb:
+    image: mongo:7
+    container_name: flipkart_mongodb
+    restart: unless-stopped
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo_data:/data/db
+
+  postgres:
+    image: pgvector/pgvector:pg16
+    container_name: flipkart_postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: flipkart
+      POSTGRES_USER: flipkart
+      POSTGRES_PASSWORD: flipkart
+    ports:
+      - "5432:5432"
+    volumes:
+      - pg_data:/var/lib/postgresql/data
+      - ./sql/init.sql:/docker-entrypoint-initdb.d/init.sql:ro
+
+volumes:
+  mongo_data:
+  pg_data:

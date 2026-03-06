@@ -1,0 +1,15 @@
+beautifulsoup4==4.12.3
+pandas==2.2.2
+python-dateutil==2.9.0.post0
+python-dotenv==1.0.1
+pydantic==2.8.2
+pydantic-settings==2.4.0
+pymongo==4.8.0
+psycopg2-binary==2.9.9
+requests==2.32.3
+sentence-transformers==3.0.1
+SQLAlchemy==2.0.32
+tenacity==8.5.0
+vaderSentiment==3.3.2
+pyarrow==17.0.0
+pytest==8.3.2
