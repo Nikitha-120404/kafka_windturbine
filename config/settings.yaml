@@ -1,0 +1,12 @@
+kafka:
+  producer_client_id: wind_turbine_live_producer
+  consumer_auto_offset_reset: earliest
+  enable_idempotence: true
+pipeline:
+  quality:
+    generator_temp_warning: 100
+    generator_temp_critical: 130
+    gear_temp_warning: 200
+    gear_temp_critical: 300
+  airflow:
+    schedule_cron: '*/30 * * * *'
