@@ -1,6 +1,6 @@
 # Real-Time Wind Turbine IoT Streaming Pipeline (Kafka + TimescaleDB + Airflow)
 
-Production-style local data engineering pipeline that streams simulated wind turbine telemetry into Kafka, validates/transforms events, stores time-series data in TimescaleDB, and orchestrates health checks with Airflow.
+data engineering pipeline that streams simulated wind turbine telemetry into Kafka, validates/transforms events, stores time-series data in TimescaleDB, and orchestrates health checks with Airflow.
 
 ## Architecture
 
